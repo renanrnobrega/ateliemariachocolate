@@ -418,13 +418,30 @@ footer a {
     text-align: left
 }
 
+.torta.foto > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover
+}
+
 .torta.foto .body {
     padding: 1.2rem 1.4rem 1.6rem
 }
 
 .prof-img {
-    aspect-ratio: auto;
-    min-height: 100%
+    position: relative;
+  /*aspect-ratio: auto;*/
+    min-height: 420px /*100%;*/
+}
+
+.prof-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top
 }
 
 .place {
